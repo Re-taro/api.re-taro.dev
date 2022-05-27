@@ -2,7 +2,7 @@ import type { Config } from "@jest/types";
 
 export default async (): Promise<Config.InitialOptions> => ({
   collectCoverageFrom: ["**/*.(t|j)s"],
-  coverageDirectory: "./coverage",
+  coverageDirectory: "../coverage",
   moduleFileExtensions: ["js", "json", "ts"],
   rootDir: "src",
   testEnvironment: "node",

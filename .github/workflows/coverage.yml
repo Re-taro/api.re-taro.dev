@@ -1,0 +1,42 @@
+name: Code coverage
+
+on:
+  pull_request:
+    branches:
+      - main
+      - dev
+
+env:
+  node-version: 16
+  pnpm-version: latest
+
+jobs:
+  coverage:
+    name: Send code coverage report
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.node-version }}
+      - name: Cache pnpm modules
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.1
+        with:
+          version: ${{ env.pnpm-version }}
+          run_install: true
+      - name: Generate code coverage report
+        run: pnpm run test:cov
+      - uses: codecov/codecov-action@v2
+        with:
+          files: ./coverage/lcov.info
+          flags: unittests
+          fail_ci_if_error: true
+          verbose: true
