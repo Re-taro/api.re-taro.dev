@@ -1,0 +1,9 @@
+root: true
+extends:
+  - re-taro
+  - re-taro/nest
+  - re-taro/typescript
+  - re-taro/prettier
+parserOptions:
+  project: ./tsconfig.json
+  sourceType: 'module'
