@@ -14,8 +14,8 @@ describe("HealthcheckController", () => {
     service = module.get<HealthcheckService>(HealthcheckService);
   });
   it("return 'Ok' in string", () => {
-    const result: string = 'Ok';
-    jest.spyOn(service, 'healthcheck').mockImplementation(() => result);
+    const result: string = "Ok";
+    jest.spyOn(service, "healthcheck").mockImplementation(() => result);
     expect(controller.healthcheck()).toBe(result);
   });
 });
