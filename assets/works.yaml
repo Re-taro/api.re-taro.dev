@@ -1,0 +1,65 @@
+- title: Something1
+  id: something1
+  image_url: https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg
+  description: 'test'
+  date: '2020-12-25'
+  work_page:
+    title: Something
+    detail: Something I do.
+    meta:
+      website: https://example.com
+      platform:
+        - linux
+      stack:
+        - icon: logos:rust
+          name: Rust
+      blog_post:
+        title: Something
+        url: https://example.com
+      presentation:
+        title: Something
+        url: https://example.com
+      source: https://github.com
+    images:
+      - https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg
+      - https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg
+      - https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg
+
+- title: Something2
+  id: something2
+  image_url: https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg
+  description: 'test'
+  date: '2021-01-01'
+  work_page:
+    title: Something
+    detail: Something I do.
+    meta:
+      website: https://example.com
+      platform:
+        - linux
+      stack:
+        - icon: logos:rust
+          name: Rust
+      blog_post:
+        title: Something
+        url: https://example.com
+      source: https://github.com
+    images:
+      - https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg
+
+- title: Something3
+  id: something3
+  image_url: https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg
+  description: 'test'
+  date: '2022-02-14'
+  work_page:
+    title: Something
+    detail: Something I do.
+    meta:
+      website: https://example.com
+      platform:
+        - linux
+      stack:
+        - icon: logos:rust
+          name: Rust
+      source: https://github.com
