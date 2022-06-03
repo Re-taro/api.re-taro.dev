@@ -9,7 +9,7 @@ specifiers:
   '@nestjs/platform-fastify': 8.4.6
   '@nestjs/schematics': 8.0.11
   '@nestjs/testing': 8.4.6
-  '@types/jest': 27.5.2
+  '@types/jest': 28.1.0
   '@types/node': 16.11.38
   '@types/supertest': 2.0.12
   axios: 0.27.2
@@ -47,7 +47,7 @@ devDependencies:
   '@nestjs/cli': 8.2.6
   '@nestjs/schematics': 8.0.11_typescript@4.7.2
   '@nestjs/testing': 8.4.6_etfae4mmenqzp3rs3pua7csngy
-  '@types/jest': 27.5.2
+  '@types/jest': 28.1.0
   '@types/node': 16.11.38
   '@types/supertest': 2.0.12
   eslint: 8.16.0
@@ -1295,8 +1295,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/27.5.2:
-    resolution: {integrity: sha512-mpT8LJJ4CMeeahobofYWIjFo0xonRS/HfxnVEPMPFSQdGUt1uHCnoPT7Zhb+sjDU2wz0oKV0OLUR0WzrHNgfeA==}
+  /@types/jest/28.1.0:
+    resolution: {integrity: sha512-ITfF6JJIl9zbEi2k6NmhNE/BiDqfsI/ceqfvdaWaPbcrCpYyyRq4KtDQIWh6vQUru6SqwppODiom/Zhid+np6A==}
     dependencies:
       jest-matcher-utils: 27.5.1
       pretty-format: 27.5.1
