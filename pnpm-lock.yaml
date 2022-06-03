@@ -5,7 +5,7 @@ specifiers:
   '@nestjs/cli': 8.2.6
   '@nestjs/common': 8.4.6
   '@nestjs/core': 8.4.6
-  '@nestjs/graphql': 10.0.14
+  '@nestjs/graphql': 10.0.15
   '@nestjs/platform-fastify': 8.4.6
   '@nestjs/schematics': 8.0.11
   '@nestjs/testing': 8.4.6
@@ -34,7 +34,7 @@ specifiers:
 dependencies:
   '@nestjs/common': 8.4.6_47vcjb2de6lyibr6g4enoa5lyu
   '@nestjs/core': 8.4.6_qna2ix3wuyhvmc56wewcijj25m
-  '@nestjs/graphql': 10.0.14_heqbhn4dprigzacxng47w3mhdi
+  '@nestjs/graphql': 10.0.15_heqbhn4dprigzacxng47w3mhdi
   '@nestjs/platform-fastify': 8.4.6_etfae4mmenqzp3rs3pua7csngy
   axios: 0.27.2
   reflect-metadata: 0.1.13
@@ -1020,8 +1020,8 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@nestjs/graphql/10.0.14_heqbhn4dprigzacxng47w3mhdi:
-    resolution: {integrity: sha512-GDxVmK1Y68Y8DobwbVwijnUnC9Xafgq9iWHMHLkYg98HajO96kCitxXVwoGqNWvakesV4gJetPjg/GyKRcndjg==}
+  /@nestjs/graphql/10.0.15_heqbhn4dprigzacxng47w3mhdi:
+    resolution: {integrity: sha512-G/w21tNhHuNe9ux0a/7jFX8MbG0NQhoe0XQKfIK/zbO/RLpUqMZGYW6DpSNIkXD9AWrMSThxOhgAjipAoGhikQ==}
     peerDependencies:
       '@apollo/subgraph': ^0.1.5 || ^0.3.0 || ^0.4.0 || ^2.0.0
       '@nestjs/common': ^8.2.3
