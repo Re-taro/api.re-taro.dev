@@ -28,13 +28,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.1
+        uses: pnpm/action-setup@v2.2.2
         with:
           version: ${{ env.pnpm-version }}
           run_install: true
       - name: Generate code coverage report
         run: pnpm run test:cov
-      - uses: codecov/codecov-action@v2
+      - uses: codecov/codecov-action@v3
         with:
           files: ./coverage/lcov.info
           flags: unittests
