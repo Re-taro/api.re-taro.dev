@@ -34,7 +34,7 @@ export class Meta {
   @Field({ nullable: true })
   website: string;
 
-  @Field({ nullable: false })
+  @Field(() => [String], { nullable: false })
   platform: Array<string>;
 
   @Field(() => [Stack], { nullable: false })
@@ -61,7 +61,7 @@ export class WorkPage {
   @Field(() => Meta, { nullable: false })
   meta: Meta;
 
-  @Field({ nullable: true })
+  @Field(() => [String], { nullable: true })
   images: Array<string>;
 }
 
