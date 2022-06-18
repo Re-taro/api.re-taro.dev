@@ -29,15 +29,16 @@ describe("MatterService", () => {
   });
   it("return fetch parse data", async () => {
     expect(await service.fetchFile("hello-world")).toStrictEqual({
-      content: "##" +
+      content:
+        "##" +
         " ブログ開設しました\n\nこんにちは、[@Re-taro](https://twitter.com/10969_rintaro/)です。\n\nこの度ブログをポートフォリオの内部に開設しました。\n\n一応雑多ブログのつもりですが、技術メインで色々アウトプットできる場にしていきたいと考えてます。\n\nそれでは。",
       data: {
         title: "Hello World",
         id: "hello-world",
         emoji: "👋",
         date: "2022-01-05",
-        tags: ["develop", "hello"]
-      }
-    })
-  })
+        tags: ["develop", "hello"],
+      },
+    });
+  });
 });
