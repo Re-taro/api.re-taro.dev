@@ -16,7 +16,7 @@ export class PostHeader {
   @Field({ nullable: false })
   date: string;
 
-  @Field({ nullable: false })
+  @Field(() => [String], { nullable: false })
   tags: Array<string>;
 }
 
