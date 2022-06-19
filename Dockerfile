@@ -28,6 +28,6 @@ USER nonroot
 
 COPY --from=deps /deps/package.json ./
 COPY --from=deps /deps/node_modules ./node_modules/
-COPY --from=build /build/dist/src ./dist/
+COPY --from=build /build/dist ./dist/
 
-CMD ["./dist/main"]
+CMD ["./dist/src/main"]
