@@ -9,7 +9,7 @@ const bootstrap = async () => {
   app.useGlobalPipes(
     new ValidationPipe({
       exceptionFactory: (errors): Array<ValidationError> => {
-        const messages = errors.flatMap((error) => {
+        const messages = errors.flatMap(error => {
           const response: { key: string; messages: string[] }[] = [];
           const cons = error.constraints ?? {};
           const mes: string[] = [];
@@ -23,7 +23,7 @@ const bootstrap = async () => {
         throw new BadRequestException(messages);
       },
     }),
-  )
+  );
   await app.listen(port, "0.0.0.0");
 };
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
