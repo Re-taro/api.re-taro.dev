@@ -1,0 +1,16 @@
+.git/
+.github/
+assets/
+coverage/
+dist/
+e2e/
+node_modules/
+.editorconfig
+.eslintignore
+.eslintrc.yaml
+.gitattributes
+.gitignore
+.prettierrc.yml
+jest.config.ts
+LICENSE
+renovate.json
