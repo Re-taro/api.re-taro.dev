@@ -9,7 +9,7 @@ RUN npm install -g pnpm && pnpm install --frozen-lockfile
 
 COPY . ./
 
-RUN pnpm build
+RUN pnpm run build
 
 FROM node:18 as deps
 
@@ -27,7 +27,7 @@ WORKDIR /app
 USER nonroot
 
 COPY --from=deps /deps/package.json ./
-COPY --from=deps /deps/node_modules ./node_modules/
-COPY --from=build /build/dist ./dist/
+COPY --from=deps /deps/node_modules ./node_modules
+COPY --from=build /build/dist ./dist
 
 CMD ["./dist/src/main"]
