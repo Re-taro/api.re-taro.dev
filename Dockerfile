@@ -17,7 +17,7 @@ FROM node:18 AS deps
 ENV NODE_ENV=production
 
 WORKDIR /deps
-COPY --from=build /build/package.json /build/pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml ./
 
 RUN  npm install -g pnpm && pnpm install --frozen-lockfile
 
