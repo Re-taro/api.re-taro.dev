@@ -102,8 +102,8 @@ describe("RepositoryService", () => {
       date: "2020-12-25",
       description: "test",
       id: "something1",
-      image_url: "https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg",
-      work_page: {
+      imageUrl: "https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg",
+      workPage: {
         title: "Something",
         detail: "Something I do.",
         meta: {
@@ -115,7 +115,7 @@ describe("RepositoryService", () => {
               name: "Rust",
             },
           ],
-          blog_post: {
+          blogPost: {
             title: "Something",
             url: "https://example.com",
           },
@@ -140,8 +140,8 @@ describe("RepositoryService", () => {
         date: "2020-12-25",
         description: "test",
         id: "something1",
-        image_url: "https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg",
-        work_page: {
+        imageUrl: "https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg",
+        workPage: {
           title: "Something",
           detail: "Something I do.",
           meta: {
@@ -153,7 +153,7 @@ describe("RepositoryService", () => {
                 name: "Rust",
               },
             ],
-            blog_post: {
+            blogPost: {
               title: "Something",
               url: "https://example.com",
             },
@@ -175,8 +175,8 @@ describe("RepositoryService", () => {
         id: "something2",
         date: "2021-01-01",
         description: "test",
-        image_url: "https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg",
-        work_page: {
+        imageUrl: "https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg",
+        workPage: {
           title: "Something",
           detail: "Something I do.",
           meta: {
@@ -188,7 +188,7 @@ describe("RepositoryService", () => {
                 name: "Rust",
               },
             ],
-            blog_post: {
+            blogPost: {
               title: "Something",
               url: "https://example.com",
             },
@@ -202,8 +202,8 @@ describe("RepositoryService", () => {
         date: "2022-02-14",
         description: "test",
         id: "something3",
-        image_url: "https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg",
-        work_page: {
+        imageUrl: "https://raw.githubusercontent.com/Re-taro/re-taro.d/main/images/test.jpg",
+        workPage: {
           title: "Something",
           detail: "Something I do.",
           meta: {

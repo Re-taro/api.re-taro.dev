@@ -53,7 +53,7 @@ describe("end to end test", () => {
     return await request(app.getHttpServer())
       .post("/graphql")
       .send({
-        query: `query {\n  \twork(id: \"${id}\") {\n    date\n    title\n    id\n    work_page {\n      detail\n      meta {\n        blog_post {\n          title\n          url\n        }\n        platform\n        stack {\n          icon\n          name\n        }\n      }\n    }\n  }\n}`,
+        query: `query {\n  \twork(id: \"${id}\") {\n    date\n    title\n    id\n    workPage {\n      detail\n      meta {\n        blogPost {\n          title\n          url\n        }\n        platform\n        stack {\n          icon\n          name\n        }\n      }\n    }\n  }\n}`,
       });
   };
   const fetchWorks = async (): Promise<request.Response> => {
@@ -172,10 +172,10 @@ describe("end to end test", () => {
           date: "2020-12-25",
           title: "Something1",
           id: "something1",
-          work_page: {
+          workPage: {
             detail: "Something I do.",
             meta: {
-              blog_post: {
+              blogPost: {
                 title: "Something",
                 url: "https://example.com",
               },

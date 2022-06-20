@@ -41,7 +41,7 @@ export class Meta {
   stack: Array<Stack>;
 
   @Field(() => BlogPost, { nullable: true })
-  blog_post: BlogPost;
+  blogPost: BlogPost;
 
   @Field(() => Presentation, { nullable: true })
   presentation: Presentation;
@@ -74,7 +74,7 @@ export class Work {
   id: string;
 
   @Field({ nullable: false })
-  image_url: string;
+  imageUrl: string;
 
   @Field({ nullable: false })
   date: string;
@@ -83,7 +83,7 @@ export class Work {
   description: string;
 
   @Field(() => WorkPage, { nullable: false })
-  work_page: WorkPage;
+  workPage: WorkPage;
 }
 
 /* eslint-enable */
