@@ -25,8 +25,6 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-USER nonroot
-
 COPY --from=build /build/dist /app/dist
 COPY --from=deps /deps/node_modules /app/node_modules
 
