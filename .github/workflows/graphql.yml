@@ -1,0 +1,14 @@
+name: "Dispatch GraphQL change"
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "graphql/**"
+
+jobs:
+  dispatch-graphql:
+    runs-on: ubuntu-latest
+      steps:
+        - run: |
+            curl -vv -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" -H "Accept: application/vnd.github.everest-preview+json" "https://api.github.com/repos/re-taro/re-taro.dev/dispatches" -d '{"event_type": "graphql"}'
