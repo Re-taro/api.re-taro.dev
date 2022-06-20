@@ -10,7 +10,7 @@ import { RepositoryService } from "./repository.service";
 @Module({
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
-      autoSchemaFile: join(process.cwd(), "src/schema.gql"),
+      autoSchemaFile: join(process.cwd(), "src/schema.graphql"),
       debug: process.env.NODE_ENV !== "production",
       driver: ApolloDriver,
       playground: process.env.NODE_ENV !== "production",
