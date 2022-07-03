@@ -55,7 +55,7 @@
     "@nestjs/schematics": "8.0.11",
     "@nestjs/testing": "8.4.7",
     "@types/jest": "28.1.4",
-    "@types/node": "16.11.42",
+    "@types/node": "16.11.43",
     "@types/supertest": "2.0.12",
     "apollo-server-express": "3.9.0",
     "eslint": "8.19.0",
@@ -68,7 +68,7 @@
     "supertest": "6.2.4",
     "ts-jest": "28.0.5",
     "ts-loader": "9.3.1",
-    "ts-node": "10.8.1",
+    "ts-node": "10.8.2",
     "tsconfig-paths": "4.0.0",
     "typescript": "4.7.4",
     "webpack": "5.73.0"
