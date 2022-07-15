@@ -38,14 +38,14 @@
     "@nestjs/core": "8.4.7",
     "@nestjs/graphql": "10.0.18",
     "@nestjs/platform-fastify": "8.4.7",
-    "apollo-server-fastify": "3.9.0",
+    "apollo-server-fastify": "3.10.0",
     "axios": "0.27.2",
     "class-transformer": "0.5.1",
     "class-validator": "0.13.2",
     "fastify": "3.29.1",
     "graphql": "16.5.0",
     "reflect-metadata": "0.1.13",
-    "rxjs": "7.5.5",
+    "rxjs": "7.5.6",
     "yaml": "2.1.1"
   },
   "devDependencies": {

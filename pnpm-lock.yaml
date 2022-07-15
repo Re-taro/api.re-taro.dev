@@ -15,7 +15,7 @@ specifiers:
   '@types/node': 16.11.43
   '@types/supertest': 2.0.12
   apollo-server-express: 3.9.0
-  apollo-server-fastify: 3.9.0
+  apollo-server-fastify: 3.10.0
   axios: 0.27.2
   class-transformer: 0.5.1
   class-validator: 0.13.2
@@ -28,7 +28,7 @@ specifiers:
   prettier: 2.7.1
   reflect-metadata: 0.1.13
   rimraf: 3.0.2
-  rxjs: 7.5.5
+  rxjs: 7.5.6
   source-map-support: 0.5.21
   supertest: 6.2.4
   ts-jest: 28.0.5
@@ -40,19 +40,19 @@ specifiers:
   yaml: 2.1.1
 
 dependencies:
-  '@nestjs/apollo': 10.0.17_yvmyk7jwwavdrfydojdeo7jjny
-  '@nestjs/common': 8.4.7_kgmvgmqc4iohdboj3f7yqhrie4
-  '@nestjs/core': 8.4.7_fkqgj3xrohk2pflugljc4sz7ea
+  '@nestjs/apollo': 10.0.17_mgs5dma4kum6cmargyxljwos4m
+  '@nestjs/common': 8.4.7_allg6cauirbqzgqcmexy2wdnoq
+  '@nestjs/core': 8.4.7_vfcxgjfmqg6zhc6pfncoklq5wm
   '@nestjs/graphql': 10.0.18_azbz4vimtm5rsq3nyrt5st4aze
   '@nestjs/platform-fastify': 8.4.7_7tsmhnugyerf5okgqzer2mfqme
-  apollo-server-fastify: 3.9.0_fs6cl6gqybbcj7xzz72msc6zye
+  apollo-server-fastify: 3.10.0_fs6cl6gqybbcj7xzz72msc6zye
   axios: 0.27.2
   class-transformer: 0.5.1
   class-validator: 0.13.2
   fastify: 3.29.1
   graphql: 16.5.0
   reflect-metadata: 0.1.13
-  rxjs: 7.5.5
+  rxjs: 7.5.6
   yaml: 2.1.1
 
 devDependencies:
@@ -197,8 +197,8 @@ packages:
       - chokidar
     dev: true
 
-  /@apollo/protobufjs/1.2.2:
-    resolution: {integrity: sha512-vF+zxhPiLtkwxONs6YanSt1EpwpGilThpneExUN5K3tCymuxNnVq2yojTvnpRjv2QfsEIt/n7ozPIIzBLwGIDQ==}
+  /@apollo/protobufjs/1.2.4:
+    resolution: {integrity: sha512-npVJ9NVU/pynj+SCU+fambvTneJDyCnif738DnZ7pCxdDtzeEz7WkpSIq5wNUmWm5Td55N+S2xfqZ+WP4hDLng==}
     hasBin: true
     requiresBuild: true
     dependencies:
@@ -277,7 +277,7 @@ packages:
       '@apollo/utils.removealiases': 1.0.0_graphql@16.5.0
       '@apollo/utils.sortast': 1.1.0_graphql@16.5.0
       '@apollo/utils.stripsensitiveliterals': 1.2.0_graphql@16.5.0
-      apollo-reporting-protobuf: 3.3.1
+      apollo-reporting-protobuf: 3.3.2
       graphql: 16.5.0
 
   /@apollographql/apollo-tools/0.5.4_graphql@16.5.0:
@@ -1127,7 +1127,7 @@ packages:
     resolution: {integrity: sha512-H1rQc1ZOHANWBvPcW+JpGwr+juXSxM8Q8YCkm3GhZd8REu1fHR3z99CErO1p9pkcfcxZnMdIZdIsXkOHY0NilA==}
     dev: true
 
-  /@nestjs/apollo/10.0.17_yvmyk7jwwavdrfydojdeo7jjny:
+  /@nestjs/apollo/10.0.17_mgs5dma4kum6cmargyxljwos4m:
     resolution: {integrity: sha512-FQUaMtxQgn42jD2z2Z1Stqct4WO9SUj/dtDCj/b9XWW9GPWf8l8LRR8ftEiyrDBG7f0A2m2B0hSHhIpkGcFNOQ==}
     peerDependencies:
       '@apollo/gateway': ^0.44.1 || ^0.46.0 || ^0.48.0 || ^0.49.0 || ^0.50.0 || ^2.0.0
@@ -1147,11 +1147,11 @@ packages:
       apollo-server-fastify:
         optional: true
     dependencies:
-      '@nestjs/common': 8.4.7_kgmvgmqc4iohdboj3f7yqhrie4
-      '@nestjs/core': 8.4.7_fkqgj3xrohk2pflugljc4sz7ea
+      '@nestjs/common': 8.4.7_allg6cauirbqzgqcmexy2wdnoq
+      '@nestjs/core': 8.4.7_vfcxgjfmqg6zhc6pfncoklq5wm
       '@nestjs/graphql': 10.0.18_azbz4vimtm5rsq3nyrt5st4aze
       apollo-server-express: 3.9.0_g7snex6epo2tsaz6yhvyva23iq
-      apollo-server-fastify: 3.9.0_fs6cl6gqybbcj7xzz72msc6zye
+      apollo-server-fastify: 3.10.0_fs6cl6gqybbcj7xzz72msc6zye
       iterall: 1.3.0
       lodash.omit: 4.5.0
       tslib: 2.4.0
@@ -1192,7 +1192,7 @@ packages:
       - webpack-cli
     dev: true
 
-  /@nestjs/common/8.4.7_kgmvgmqc4iohdboj3f7yqhrie4:
+  /@nestjs/common/8.4.7_allg6cauirbqzgqcmexy2wdnoq:
     resolution: {integrity: sha512-m/YsbcBal+gA5CFrDpqXqsSfylo+DIQrkFY3qhVIltsYRfu8ct8J9pqsTO6OPf3mvqdOpFGrV5sBjoyAzOBvsw==}
     peerDependencies:
       cache-manager: '*'
@@ -1213,13 +1213,13 @@ packages:
       class-validator: 0.13.2
       iterare: 1.2.1
       reflect-metadata: 0.1.13
-      rxjs: 7.5.5
+      rxjs: 7.5.6
       tslib: 2.4.0
       uuid: 8.3.2
     transitivePeerDependencies:
       - debug
 
-  /@nestjs/core/8.4.7_fkqgj3xrohk2pflugljc4sz7ea:
+  /@nestjs/core/8.4.7_vfcxgjfmqg6zhc6pfncoklq5wm:
     resolution: {integrity: sha512-XB9uexHqzr2xkPo6QSiQWJJttyYYLmvQ5My64cFvWFi7Wk2NIus0/xUNInwX3kmFWB6pF1ab5Y2ZBvWdPwGBhw==}
     requiresBuild: true
     peerDependencies:
@@ -1237,7 +1237,7 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 8.4.7_kgmvgmqc4iohdboj3f7yqhrie4
+      '@nestjs/common': 8.4.7_allg6cauirbqzgqcmexy2wdnoq
       '@nestjs/platform-express': 8.4.7_7tsmhnugyerf5okgqzer2mfqme
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
@@ -1245,7 +1245,7 @@ packages:
       object-hash: 3.0.0
       path-to-regexp: 3.2.0
       reflect-metadata: 0.1.13
-      rxjs: 7.5.5
+      rxjs: 7.5.6
       tslib: 2.4.0
       uuid: 8.3.2
     transitivePeerDependencies:
@@ -1269,8 +1269,8 @@ packages:
       '@graphql-tools/merge': 8.3.0_graphql@16.5.0
       '@graphql-tools/schema': 8.5.0_graphql@16.5.0
       '@graphql-tools/utils': 8.8.0_graphql@16.5.0
-      '@nestjs/common': 8.4.7_kgmvgmqc4iohdboj3f7yqhrie4
-      '@nestjs/core': 8.4.7_fkqgj3xrohk2pflugljc4sz7ea
+      '@nestjs/common': 8.4.7_allg6cauirbqzgqcmexy2wdnoq
+      '@nestjs/core': 8.4.7_vfcxgjfmqg6zhc6pfncoklq5wm
       '@nestjs/mapped-types': 1.1.0_7zw7e46jhcfuw5vwuwho2brjki
       chokidar: 3.5.3
       fast-glob: 3.2.11
@@ -1304,7 +1304,7 @@ packages:
       class-validator:
         optional: true
     dependencies:
-      '@nestjs/common': 8.4.7_kgmvgmqc4iohdboj3f7yqhrie4
+      '@nestjs/common': 8.4.7_allg6cauirbqzgqcmexy2wdnoq
       class-transformer: 0.5.1
       class-validator: 0.13.2
       reflect-metadata: 0.1.13
@@ -1316,8 +1316,8 @@ packages:
       '@nestjs/common': ^8.0.0
       '@nestjs/core': ^8.0.0
     dependencies:
-      '@nestjs/common': 8.4.7_kgmvgmqc4iohdboj3f7yqhrie4
-      '@nestjs/core': 8.4.7_fkqgj3xrohk2pflugljc4sz7ea
+      '@nestjs/common': 8.4.7_allg6cauirbqzgqcmexy2wdnoq
+      '@nestjs/core': 8.4.7_vfcxgjfmqg6zhc6pfncoklq5wm
       body-parser: 1.20.0
       cors: 2.8.5
       express: 4.18.1
@@ -1332,8 +1332,8 @@ packages:
       '@nestjs/common': ^8.0.0
       '@nestjs/core': ^8.0.0
     dependencies:
-      '@nestjs/common': 8.4.7_kgmvgmqc4iohdboj3f7yqhrie4
-      '@nestjs/core': 8.4.7_fkqgj3xrohk2pflugljc4sz7ea
+      '@nestjs/common': 8.4.7_allg6cauirbqzgqcmexy2wdnoq
+      '@nestjs/core': 8.4.7_vfcxgjfmqg6zhc6pfncoklq5wm
       fastify: 3.29.0
       fastify-cors: 6.1.0
       fastify-formbody: 5.3.0
@@ -1388,8 +1388,8 @@ packages:
       '@nestjs/platform-express':
         optional: true
     dependencies:
-      '@nestjs/common': 8.4.7_kgmvgmqc4iohdboj3f7yqhrie4
-      '@nestjs/core': 8.4.7_fkqgj3xrohk2pflugljc4sz7ea
+      '@nestjs/common': 8.4.7_allg6cauirbqzgqcmexy2wdnoq
+      '@nestjs/core': 8.4.7_vfcxgjfmqg6zhc6pfncoklq5wm
       '@nestjs/platform-express': 8.4.7_7tsmhnugyerf5okgqzer2mfqme
       tslib: 2.4.0
     dev: true
@@ -2093,10 +2093,43 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /apollo-reporting-protobuf/3.3.1:
-    resolution: {integrity: sha512-tyvj3Vj71TCh6c8PtdHOLgHHBSJ05DF/A/Po3q8yfHTBkOPcOJZE/GGN/PT/pwKg7HHxKcAeHDw7+xciVvGx0w==}
+  /apollo-reporting-protobuf/3.3.2:
+    resolution: {integrity: sha512-j1tx9tmkVdsLt1UPzBrvz90PdjAeKW157WxGn+aXlnnGfVjZLIRXX3x5t1NWtXvB7rVaAsLLILLtDHW382TSoQ==}
     dependencies:
-      '@apollo/protobufjs': 1.2.2
+      '@apollo/protobufjs': 1.2.4
+
+  /apollo-server-core/3.10.0_graphql@16.5.0:
+    resolution: {integrity: sha512-ln5drIk3oW/ycYhcYL9TvM7vRf7OZwJrgHWlnjnMakozBQIBSumdMi4pN001DhU9mVBWTfnmBv3CdcxJdGXIvA==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      graphql: ^15.3.0 || ^16.0.0
+    dependencies:
+      '@apollo/utils.keyvaluecache': 1.0.1
+      '@apollo/utils.logger': 1.0.0
+      '@apollo/utils.usagereporting': 1.0.0_graphql@16.5.0
+      '@apollographql/apollo-tools': 0.5.4_graphql@16.5.0
+      '@apollographql/graphql-playground-html': 1.6.29
+      '@graphql-tools/mock': 8.6.12_graphql@16.5.0
+      '@graphql-tools/schema': 8.5.0_graphql@16.5.0
+      '@josephg/resolvable': 1.0.1
+      apollo-datasource: 3.3.2
+      apollo-reporting-protobuf: 3.3.2
+      apollo-server-env: 4.2.1
+      apollo-server-errors: 3.3.1_graphql@16.5.0
+      apollo-server-plugin-base: 3.6.2_graphql@16.5.0
+      apollo-server-types: 3.6.2_graphql@16.5.0
+      async-retry: 1.3.3
+      fast-json-stable-stringify: 2.1.0
+      graphql: 16.5.0
+      graphql-tag: 2.12.6_graphql@16.5.0
+      loglevel: 1.8.0
+      lru-cache: 6.0.0
+      sha.js: 2.4.11
+      uuid: 8.3.2
+      whatwg-mimetype: 3.0.0
+    transitivePeerDependencies:
+      - encoding
+    dev: false
 
   /apollo-server-core/3.9.0_graphql@16.5.0:
     resolution: {integrity: sha512-WS54C33cTriDaBIcj7ijWv/fgeJICcrQKlP1Cn6pnZp/eumpMraezLeJ3gFWAXprOuR2E3fZe64lNlup0fMu8w==}
@@ -2113,11 +2146,11 @@ packages:
       '@graphql-tools/schema': 8.5.0_graphql@16.5.0
       '@josephg/resolvable': 1.0.1
       apollo-datasource: 3.3.2
-      apollo-reporting-protobuf: 3.3.1
+      apollo-reporting-protobuf: 3.3.2
       apollo-server-env: 4.2.1
       apollo-server-errors: 3.3.1_graphql@16.5.0
-      apollo-server-plugin-base: 3.6.1_graphql@16.5.0
-      apollo-server-types: 3.6.1_graphql@16.5.0
+      apollo-server-plugin-base: 3.6.2_graphql@16.5.0
+      apollo-server-types: 3.6.2_graphql@16.5.0
       async-retry: 1.3.3
       fast-json-stable-stringify: 2.1.0
       graphql: 16.5.0
@@ -2170,8 +2203,8 @@ packages:
       - encoding
       - supports-color
 
-  /apollo-server-fastify/3.9.0_fs6cl6gqybbcj7xzz72msc6zye:
-    resolution: {integrity: sha512-7Uy1DuRPHP/MSN3GiUyF25CVx0DtgaVVwiO2yC9+WumICmsnHOq1NwdhPapU3fmp+xCaXMAlsMg9gy+WqKBlnA==}
+  /apollo-server-fastify/3.10.0_fs6cl6gqybbcj7xzz72msc6zye:
+    resolution: {integrity: sha512-IWsLDQLuJj1Yk6HZ1VuTDt3GjGeUP6MEVk8wMHk021VlueL9y25ZKm3xWGA6kmVJ1wAnaNuUCDZXY4hxsV2kcw==}
     engines: {node: '>=12.0'}
     peerDependencies:
       fastify: ^3.17.0
@@ -2179,21 +2212,21 @@ packages:
     dependencies:
       '@fastify/accepts': 3.0.0
       '@fastify/cors': 7.0.0
-      apollo-server-core: 3.9.0_graphql@16.5.0
-      apollo-server-types: 3.6.1_graphql@16.5.0
+      apollo-server-core: 3.10.0_graphql@16.5.0
+      apollo-server-types: 3.6.2_graphql@16.5.0
       fastify: 3.29.1
       graphql: 16.5.0
     transitivePeerDependencies:
       - encoding
     dev: false
 
-  /apollo-server-plugin-base/3.6.1_graphql@16.5.0:
-    resolution: {integrity: sha512-bFpxzWO0LTTtSAkGVBeaAtnQXJ5ZCi8eaLN/eMSju8RByifmF3Kr6gAqcOZhOH/geQEt3Y6G8n3bR0eHTGxljQ==}
+  /apollo-server-plugin-base/3.6.2_graphql@16.5.0:
+    resolution: {integrity: sha512-erWXjLOO1u7fxQkbxJ2cwSO7p0tYzNied91I1SJ9tikXZ/2eZUyDyvrpI+4g70kOdEi+AmJ5Fo8ahEXKJ75zdg==}
     engines: {node: '>=12.0'}
     peerDependencies:
       graphql: ^15.3.0 || ^16.0.0
     dependencies:
-      apollo-server-types: 3.6.1_graphql@16.5.0
+      apollo-server-types: 3.6.2_graphql@16.5.0
       graphql: 16.5.0
     transitivePeerDependencies:
       - encoding
@@ -2206,7 +2239,21 @@ packages:
     dependencies:
       '@apollo/utils.keyvaluecache': 1.0.1
       '@apollo/utils.logger': 1.0.0
-      apollo-reporting-protobuf: 3.3.1
+      apollo-reporting-protobuf: 3.3.2
+      apollo-server-env: 4.2.1
+      graphql: 16.5.0
+    transitivePeerDependencies:
+      - encoding
+
+  /apollo-server-types/3.6.2_graphql@16.5.0:
+    resolution: {integrity: sha512-9Z54S7NB+qW1VV+kmiqwU2Q6jxWfX89HlSGCGOo3zrkrperh85LrzABgN9S92+qyeHYd72noMDg2aI039sF3dg==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      graphql: ^15.3.0 || ^16.0.0
+    dependencies:
+      '@apollo/utils.keyvaluecache': 1.0.1
+      '@apollo/utils.logger': 1.0.0
+      apollo-reporting-protobuf: 3.3.2
       apollo-server-env: 4.2.1
       graphql: 16.5.0
     transitivePeerDependencies:
@@ -4450,7 +4497,7 @@ packages:
       mute-stream: 0.0.8
       ora: 5.4.1
       run-async: 2.4.1
-      rxjs: 7.5.5
+      rxjs: 7.5.6
       string-width: 4.2.3
       strip-ansi: 6.0.1
       through: 2.3.8
@@ -6307,8 +6354,8 @@ packages:
       tslib: 1.14.1
     dev: true
 
-  /rxjs/7.5.5:
-    resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
+  /rxjs/7.5.6:
+    resolution: {integrity: sha512-dnyv2/YsXhnm461G+R/Pe5bWP41Nm6LBXEYWI6eiFP4fiwx6WRI/CD0zbdVAudd9xwLEF2IDcKXLHit0FYjUzw==}
     dependencies:
       tslib: 2.4.0
 
