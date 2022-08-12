@@ -5,13 +5,13 @@ import { ArgsType, Field } from "@nestjs/graphql";
 @ArgsType()
 export class PostId {
   @Field({ nullable: false })
-  id: string
+  id: string;
 }
 
 @ArgsType()
 export class PostTag {
   @Field({ nullable: false })
-  tag: string
+  tag: string;
 }
 
 /* eslint-enable max-classes-per-file */

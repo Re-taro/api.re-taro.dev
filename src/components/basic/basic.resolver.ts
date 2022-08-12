@@ -1,6 +1,6 @@
-import {Query, Resolver} from '@nestjs/graphql';
-import {BasicService} from "./basic.service";
-import {Basic} from "./type/basic.model";
+import { Query, Resolver } from "@nestjs/graphql";
+import { BasicService } from "./basic.service";
+import { Basic } from "./type/basic.model";
 
 @Resolver()
 export class BasicResolver {

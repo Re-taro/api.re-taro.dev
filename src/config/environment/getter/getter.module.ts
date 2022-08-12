@@ -1,18 +1,18 @@
-import { Global, Module } from '@nestjs/common';
-import { ConfigModule } from '@nestjs/config';
-import { validate } from '../validator';
-import { Environment } from './getter.service';
+import { Global, Module } from "@nestjs/common";
+import { ConfigModule } from "@nestjs/config";
+import { validate } from "../validator";
+import { Environment } from "./getter.service";
 
 @Global()
 @Module({
   exports: [Environment],
   imports: [
     ConfigModule.forRoot({
-      envFilePath: ['.env'],
+      envFilePath: [".env"],
       isGlobal: true,
       validate,
     }),
   ],
-  providers: [Environment]
+  providers: [Environment],
 })
 export class EnvironmentModule {}

@@ -1,7 +1,7 @@
-import {Args, Query, Resolver} from '@nestjs/graphql';
-import {WorkId} from "./type/work.argument";
-import {Work} from "./type/work.model";
-import {WorkService} from "./work.service";
+import { Args, Query, Resolver } from "@nestjs/graphql";
+import { WorkId } from "./type/work.argument";
+import { Work } from "./type/work.model";
+import { WorkService } from "./work.service";
 
 @Resolver()
 export class WorkResolver {

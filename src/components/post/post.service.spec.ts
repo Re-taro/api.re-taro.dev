@@ -1,11 +1,11 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { PostService } from './post.service';
-import {YamlModule} from "../../utils/yaml/yaml.module";
-import {MatterModule} from "../../utils/matter/matter.module";
-import {Post} from "./type/post.model";
-import {PostId, PostTag} from "./type/post.argument";
+import { Test, TestingModule } from "@nestjs/testing";
+import { PostService } from "./post.service";
+import { YamlModule } from "../../utils/yaml/yaml.module";
+import { MatterModule } from "../../utils/matter/matter.module";
+import { Post } from "./type/post.model";
+import { PostId, PostTag } from "./type/post.argument";
 
-describe('PostService', () => {
+describe("PostService", () => {
   let service: PostService;
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -25,11 +25,11 @@ describe('PostService', () => {
       },
       "# a\n## b\n### c\n",
     );
-    const arg1 = {id: "test"} as PostId
+    const arg1 = { id: "test" } as PostId;
     expect(await service.fetchPostById(arg1)).toStrictEqual(post1);
   });
   it("return posts data from tag", async () => {
-    const arg2 = { tag: "a" } as PostTag
+    const arg2 = { tag: "a" } as PostTag;
     expect(await service.fetchPostsByTag(arg2)).toStrictEqual([
       {
         title: "Something1",

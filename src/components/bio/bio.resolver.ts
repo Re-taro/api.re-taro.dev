@@ -1,6 +1,6 @@
-import {Query, Resolver} from '@nestjs/graphql';
-import {BioService} from "./bio.service";
-import {Bio} from "./type/bio.model";
+import { Query, Resolver } from "@nestjs/graphql";
+import { BioService } from "./bio.service";
+import { Bio } from "./type/bio.model";
 
 @Resolver()
 export class BioResolver {

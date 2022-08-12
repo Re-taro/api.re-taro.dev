@@ -1,7 +1,7 @@
-import {Args, Query, Resolver} from '@nestjs/graphql';
-import {PostService} from "./post.service";
-import {PostId, PostTag} from "./type/post.argument";
-import {Post, PostHeader} from "./type/post.model";
+import { Args, Query, Resolver } from "@nestjs/graphql";
+import { PostService } from "./post.service";
+import { PostId, PostTag } from "./type/post.argument";
+import { Post, PostHeader } from "./type/post.model";
 
 @Resolver()
 export class PostResolver {
@@ -9,7 +9,7 @@ export class PostResolver {
   constructor(private readonly postService: PostService) {}
 
   @Query(() => Post, { name: "postById" })
-  fetchPostById(@Args() argument: PostId ): Promise<Post> {
+  fetchPostById(@Args() argument: PostId): Promise<Post> {
     return this.postService.fetchPostById(argument);
   }
 

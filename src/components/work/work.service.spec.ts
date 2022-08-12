@@ -1,9 +1,9 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { WorkService } from './work.service';
-import {YamlModule} from "../../utils/yaml/yaml.module";
-import {WorkId} from "./type/work.argument";
+import { Test, TestingModule } from "@nestjs/testing";
+import { WorkService } from "./work.service";
+import { YamlModule } from "../../utils/yaml/yaml.module";
+import { WorkId } from "./type/work.argument";
 
-describe('WorkService', () => {
+describe("WorkService", () => {
   let service: WorkService;
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -13,7 +13,7 @@ describe('WorkService', () => {
     service = module.get<WorkService>(WorkService);
   });
   it("return work by id", async () => {
-    const arg1 = { id: "something1" } as WorkId
+    const arg1 = { id: "something1" } as WorkId;
     expect(await service.fetchWork(arg1)).toStrictEqual({
       title: "Something1",
       date: "2020-12-25",

@@ -1,8 +1,8 @@
-import { plainToClass } from 'class-transformer';
-import { validateSync } from 'class-validator';
+import { plainToClass } from "class-transformer";
+import { validateSync } from "class-validator";
 
 class EnvironmentValidator {
-  NODE_ENV: 'development' | 'production' | 'test';
+  NODE_ENV: "development" | "production" | "test";
 
   PORT = 3003;
 

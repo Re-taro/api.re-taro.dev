@@ -1,8 +1,8 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { BioService } from './bio.service';
-import {YamlModule} from "../../utils/yaml/yaml.module";
+import { Test, TestingModule } from "@nestjs/testing";
+import { BioService } from "./bio.service";
+import { YamlModule } from "../../utils/yaml/yaml.module";
 
-describe('BioService', () => {
+describe("BioService", () => {
   let service: BioService;
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
