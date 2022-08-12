@@ -1,8 +1,14 @@
 name: Publish current Graph
+
 on:
   push:
     branches:
       - main
+
+env:
+  node-version: 16
+  pnpm-version: latest
+
 jobs:
   publish-graphql:
     name: Publish Graph
