@@ -4,10 +4,9 @@
   "testRegex": ".*\\.spec\\.ts$",
   "transform": {
   "^.+\\.(t|j)s$": "ts-jest"
-},
+  },
   "collectCoverageFrom": ["./src/**/*.ts"],
   "coveragePathIgnorePatterns": ["dist", "node_modules"],
   "coverageDirectory": "./coverage",
-  "testEnvironment": "node",
-  "setupFiles": ["dotenv/config"]
+  "testEnvironment": "node"
 }
