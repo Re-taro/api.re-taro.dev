@@ -32,4 +32,4 @@ export class Basic {
   affiliation: Affiliation;
 }
 
-/* eslint-enable */
+/* eslint-enable max-classes-per-file */
