@@ -38,7 +38,7 @@
     "apollo:rover": "rover graph publish re-taro@current --schema ./graphql/schema.graphql"
   },
   "dependencies": {
-    "@nestjs/apollo": "10.0.16",
+    "@nestjs/apollo": "10.0.19",
     "@nestjs/common": "8.4.7",
     "@nestjs/config": "^2.2.0",
     "@nestjs/core": "8.4.7",
@@ -62,8 +62,8 @@
     "@nestjs/cli": "8.2.6",
     "@nestjs/schematics": "8.0.11",
     "@nestjs/testing": "8.4.7",
-    "@types/jest": "28.1.2",
-    "@types/node": "16.11.41",
+    "@types/jest": "28.1.6",
+    "@types/node": "16.11.47",
     "@types/supertest": "2.0.12",
     "apollo-server-types": "^3.6.2",
     "eslint": "8.18.0",
@@ -72,12 +72,12 @@
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
     "source-map-support": "0.5.21",
-    "supertest": "6.2.3",
-    "ts-jest": "28.0.5",
-    "ts-loader": "9.3.0",
-    "ts-node": "10.8.1",
-    "tsconfig-paths": "4.0.0",
+    "supertest": "6.2.4",
+    "ts-jest": "28.0.7",
+    "ts-loader": "9.3.1",
+    "ts-node": "10.9.1",
+    "tsconfig-paths": "4.1.0",
     "typescript": "4.7.4",
-    "webpack": "5.73.0"
+    "webpack": "5.74.0"
   }
 }
