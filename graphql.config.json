@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "api.re-taro.dev": {
+      "schema": ["./graphql/schema.graphql"]
+    }
+  }
+}
