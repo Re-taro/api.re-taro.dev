@@ -86,4 +86,4 @@ export class Work {
   workPage: WorkPage;
 }
 
-/* eslint-enable */
+/* eslint-enable max-classes-per-file */

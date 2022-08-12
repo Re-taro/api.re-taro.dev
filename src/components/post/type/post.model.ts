@@ -34,4 +34,4 @@ export class Post {
   content: string;
 }
 
-/* eslint-enable */
+/* eslint-enable max-classes-per-file */

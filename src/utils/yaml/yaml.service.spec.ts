@@ -1,5 +1,5 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { Basic } from "../models/basic.model";
+import { Basic } from "../../components/basic/type/basic.model";
 import { YamlService } from "./yaml.service";
 
 describe("YamlService", () => {

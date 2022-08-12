@@ -1,4 +1,4 @@
-name: "Dispatch GraphQL change"
+name: Dispatch GraphQL change
 on:
   push:
     branches:

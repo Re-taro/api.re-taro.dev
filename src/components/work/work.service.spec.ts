@@ -1,103 +1,20 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { RepositoryService } from "./repository.service";
-import { YamlModule } from "../yaml/yaml.module";
-import { MatterModule } from "../matter/matter.module";
-import { Post } from "../models/post.model";
+import { WorkService } from "./work.service";
+import { YamlModule } from "../../utils/yaml/yaml.module";
+import { WorkId } from "./type/work.argument";
 
-describe("RepositoryService", () => {
-  let service: RepositoryService;
+describe("WorkService", () => {
+  let service: WorkService;
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      imports: [YamlModule, MatterModule],
-      providers: [RepositoryService],
+      imports: [YamlModule],
+      providers: [WorkService],
     }).compile();
-    service = module.get<RepositoryService>(RepositoryService);
-  });
-  it("return basic data", async () => {
-    expect(await service.fetchBasic()).toStrictEqual({
-      name: {
-        primary: "Rintaro Itokawa",
-        position: "でべろっぱ",
-      },
-      introduction: "りんちゃんです。",
-      affiliation: {
-        location: "NITSC",
-        assign: "3rd grade, Information dep.",
-      },
-    });
-  });
-  it("return bio data", async () => {
-    expect(await service.fetchBio()).toStrictEqual([
-      {
-        action: "admission",
-        date: "2020-04-07",
-        title: "Enter to NITSC",
-      },
-      {
-        action: "evolution",
-        date: "2021-04-25",
-        title: "Evolution",
-      },
-    ]);
-  });
-  it("return post data from id", async () => {
-    const post1 = new Post(
-      {
-        title: "Something1",
-        id: "test",
-        emoji: "🚧",
-        date: "2020-12-25",
-        tags: ["a", "b", "c"],
-      },
-      "# a\n## b\n### c\n",
-    );
-    expect(await service.fetchPostById("test")).toStrictEqual(post1);
-  });
-  it("return posts data from tag", async () => {
-    expect(await service.fetchPostsByTag("a")).toStrictEqual([
-      {
-        title: "Something1",
-        id: "test",
-        emoji: "🚧",
-        date: "2020-12-25",
-        tags: ["a", "b", "c"],
-      },
-      {
-        title: "Something3",
-        id: "b",
-        emoji: "🚧",
-        date: "2020-01-01",
-        tags: ["a", "d", "i"],
-      },
-    ]);
-  });
-  it("return posts data", async () => {
-    expect(await service.fetchPosts()).toStrictEqual([
-      {
-        title: "Something1",
-        id: "test",
-        emoji: "🚧",
-        date: "2020-12-25",
-        tags: ["a", "b", "c"],
-      },
-      {
-        title: "Something2",
-        id: "a",
-        emoji: "🚧",
-        date: "2021-10-10",
-        tags: ["d", "e", "f"],
-      },
-      {
-        title: "Something3",
-        id: "b",
-        emoji: "🚧",
-        date: "2020-01-01",
-        tags: ["a", "d", "i"],
-      },
-    ]);
+    service = module.get<WorkService>(WorkService);
   });
   it("return work by id", async () => {
-    expect(await service.fetchWork("something1")).toStrictEqual({
+    const arg1 = { id: "something1" } as WorkId;
+    expect(await service.fetchWork(arg1)).toStrictEqual({
       title: "Something1",
       date: "2020-12-25",
       description: "test",

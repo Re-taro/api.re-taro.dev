@@ -1,10 +1,9 @@
 import { BadRequestException, ValidationError, ValidationPipe } from "@nestjs/common";
 import { NestFactory } from "@nestjs/core";
-import { FastifyAdapter, NestFastifyApplication } from "@nestjs/platform-fastify";
-import { AppModule } from "./app.module";
+import { AppModule } from "./app/app.module";
 
 const bootstrap = async () => {
-  const app = await NestFactory.create<NestFastifyApplication>(AppModule, new FastifyAdapter());
+  const app = await NestFactory.create(AppModule, { cors: true });
   const port = Number(process.env.PORT) || 3003;
   app.useGlobalPipes(
     new ValidationPipe({
