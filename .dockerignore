@@ -11,6 +11,6 @@ node_modules/
 .gitattributes
 .gitignore
 .prettierrc.yml
-jest.config.ts
+jest.config.json
 LICENSE
 renovate.json
