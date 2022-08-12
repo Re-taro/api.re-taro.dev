@@ -1,4 +1,5 @@
 name: Dispatch GraphQL change
+
 on:
   push:
     branches:
