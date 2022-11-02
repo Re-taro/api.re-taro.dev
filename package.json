@@ -44,7 +44,7 @@
     "@nestjs/core": "9.1.6",
     "@nestjs/graphql": "10.1.5",
     "@nestjs/platform-express": "9.1.6",
-    "apollo-server-core": "3.10.3",
+    "apollo-server-core": "3.11.0",
     "apollo-server-express": "3.10.3",
     "axios": "0.27.2",
     "class-transformer": "0.5.1",
