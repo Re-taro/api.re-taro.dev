@@ -1,4 +1,4 @@
-FROM node:18 AS build
+FROM node:19 AS build
 
 WORKDIR /build
 
@@ -10,7 +10,7 @@ RUN npm i -g pnpm && pnpm install --frozen-lockfile
 COPY . ./
 RUN pnpm build
 
-FROM node:18 AS deps
+FROM node:19 AS deps
 
 WORKDIR /deps
 
