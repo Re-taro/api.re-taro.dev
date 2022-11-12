@@ -1,7 +1,0 @@
-package.json
-tsconfig.json
-dist
-pnpm-lock.yaml
-*.config.ts
-*.e2e-spec.ts
-*.spec.ts
